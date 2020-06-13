@@ -1,0 +1,67 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GameShop | Create Player</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h2>Create Player</h2>
+        </div>
+
+        <form class="myform" id="myform">
+
+            <div class="form-control">
+                <label for="PlayerName">Player Name</label><br />
+                <input id="PlayerName" name="PlayerName" placeholder="John Smith" type="text" />
+            </div>
+
+            <div class="form-control">
+                <label for="Email">Email</label><br />
+                <input id="Email" name="Email" placeholder="John@google.com" type="email" />
+            </div>
+
+            <div class="form-control">
+                <label for="Phone">Phone Number</label><br />
+                <input id="Phone" name="Phone" placeholder="9456321485" type="tel" />
+            </div>
+
+            <div class="form-control">
+                <label for="BirthDate">Birth Date</label><br />
+                <input id="BirthDate" name="BirthDate" placeholder="1992-04-24" type="date" />
+            </div>
+
+            <div class="form-control">
+                <label for="Password">Password</label><br />
+                <input id="Password" name="Password" placeholder="******" type="password" />
+            </div>
+
+            <div class="form-control">
+                <label for="ConfirmPassword">Confirm Password</label><br />
+                <input id="ConfirmPassword" name="ConfirmPassword" placeholder="******" type="password" />
+            </div>
+
+            <div class="form-control">
+                <label>Select Gender</label><br />
+                <input type="radio" id="Male" name="Gender" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female">Female</label>
+            </div>
+
+            <button id="submit">Submit</button>
+
+        </form>
+    </div>
+    <script src="~/Extras/jQuery/Player.js"></script>
+</body>
+</html>

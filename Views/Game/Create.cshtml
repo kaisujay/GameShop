@@ -1,0 +1,64 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Game Shop | Create Game</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h2>Create Game</h2>
+        </div>
+
+        <form class="myform" id="myform">
+
+            <div class="form-control">
+                <label for="GameName">Game Name</label><br />
+                <input id="GameName" name="GameName" placeholder="Call of Duty" type="text" />
+            </div>
+
+            <div class="form-control">
+                <label for="Publisher">Publisher</label><br />
+                <input id="Publisher" name="Publisher" placeholder="Ubisoft" type="text" />
+            </div>
+
+            <div class="form-control">
+                <label for="PlayTime">Play Time Hours</label><br />
+                <input id="PlayTime" name="PlayTime" placeholder="27" type="number" />
+            </div>
+
+            <div class="form-control">
+                <label for="ReleaseDate">Release Date</label><br />
+                <input id="ReleaseDate" name="ReleaseDate" placeholder="2012-08-24" type="date" />
+            </div>
+
+            <div class="form-control">
+                <label for="Price">Price</label><br />
+                <input id="Price" name="Price" placeholder="59" type="number" />
+            </div>
+
+            <div class="form-control">
+                <label for="GameType">Game Type</label><br />
+                <select id="GameType" name="GameType">
+                    <option value="Shooter">Shooter</option>
+                    <option value="Raceing">Raceing</option>
+                    <option value="Action">Action</option>
+                    <option value="Sports">Sports</option>
+                </select>
+            </div>
+
+            <button id="submit">Submit</button>
+
+        </form>
+    </div>
+    <script src="~/Extras/jQuery/Game.js"></script>
+</body>
+</html>

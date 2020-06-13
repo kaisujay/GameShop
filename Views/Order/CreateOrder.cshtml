@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Game Shop | Create Order</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h2>Create Order</h2>
+        </div>
+
+        <form class="myform" id="myform">
+
+            <div class="form-control">
+                <label for="PlayerNameList">Player Name</label><br />
+                <select id="PlayerNameList" name="PlayerNameList">
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="GameNameList">Game Name</label><br />
+                <select id="GameNameList" name="GameNameList">
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="Discount">Discount Rate</label><br />
+                <input id="Discount" name="Discount" placeholder="0" type="number" />
+            </div>
+
+            <button id="submit">Submit</button>
+
+        </form>
+    </div>
+    <script src="~/Extras/jQuery/CreateOrder.js"></script>
+</body>
+</html>
